@@ -3,3 +3,34 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+
+  h2 Search City
+
+  form#city-form
+    .form-group
+      label City Name
+      input.form-control#city-name(type="text")
+      button.btn.btn-primary(type="submit") Search
+
+    table.table.table-bordered
+      thead
+        tr
+          th City
+          th Country
+          th Weather
+      tbody#city-search-results
+
+    table.table.table-bordered
+      thead
+        tr
+          th City
+          th Country
+          th Temperature
+          th Feels like
+          th Weather
+          th UV
+          th Humidity
+          th Rain
+      tbody#city-weather-results
+
+      
